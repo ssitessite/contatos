@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function copiarEmail() {
+            const email = "silvino.repair@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("E-mail copiado para a área de transferência!");
+            }).catch(err => {
+                alert("Erro ao copiar o e-mail: " + err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="Contatos">
+        <img src="Imagem BC.jpg" alt="icone">
+        <h1>Silvino <span translate="no">Repair</span></h1>
+        <a href="http://wa.me/message/UMHBSTLUB3HZA1">Whatsapp</a>
+        <a href="#" onclick="copiarEmail()">E-mail</a>
+        <a href="https://www.google.com.br/maps/@-22.7503699,-47.6806595,3a,75y,283.89h,90t/data=!3m7!1e1!3m5!1sxuT1c2dl0IlBuw-cTCTYfA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DxuT1c2dl0IlBuw-cTCTYfA%26yaw%3D283.89!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D">Endereço</a>
+
+
+    </div> 
+</body>
+</html>
